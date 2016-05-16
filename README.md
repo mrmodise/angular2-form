@@ -13,4 +13,4 @@ You need to have nodeJS (npm) installed
 </ul>
 <blockquote>cd angular2-form</blockqoute>
 <blockquote>npm install</blockqoute> to install all the dependecies
-<b>NB: </b> This project has been configured to allow you to expand it into any major and cool project you have in mind
+<br/><b>NB: </b> This project has been configured to allow you to expand it into any major and cool project you have in mind
