@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width">
+
+	<title>Angular 2 contact form</title>
+
+	<!-- adjust the top margin of the view -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- bootstrapping our view -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- allow TS and JS features to work with all browsers -->
+	<script src="js/lib/angular2/es6-shim.min.js"></script>
+	<script src="js/lib/angular2/system-polyfills.js"></script>
+	<script src="js/lib/angular2/angular2-polyfills.js"></script>
+
+	<!-- module loading library: handles loading of modules in scripts -->
+	<script src="js/lib/angular2/system.src.js"></script>
+
+	<!-- Reactive programming for adding observables etc -->
+	<script src="js/lib/angular2/Rx.js"></script>
+
+	<!-- actual JS script file for Angular 2 -->
+	<script src="js/lib/angular2/angular2.dev.js"></script>
+
+	<script>
+		/* see https://github.com/systemjs/systemjs for more info */
+		System.config({
+			packages: {
+				js: {
+					format: 'register',
+					defaultExtension: 'js'
+				}
+			}
+		});
+
+		System.import('js/boot')
+			.then(null, console.error.bind(console));
+	</script>
+</head>
+<body>
+	<app>Loading...</app>
+</body>
+</html>
